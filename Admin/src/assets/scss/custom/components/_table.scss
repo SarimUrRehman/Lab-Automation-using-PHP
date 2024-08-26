@@ -1,0 +1,69 @@
+//
+// _table.scss
+//
+
+.table {
+  thead {
+    th {
+      font-weight: $fw-medium;
+      border-top: $table-border-width solid $table-border-color;
+    }
+  }
+  .table-light {
+    color: var(--#{$prefix}secondary-color);
+    border-color: $table-border-color;
+    th,
+    td {
+      background-color: $table-head-bg;
+    }
+  }
+}
+
+.table {
+  & > :not(:last-child) {
+    & > :last-child {
+      > * {
+        border-bottom-color: $table-border-color;
+      }
+    }
+  }
+}
+
+.dataTable {
+  td,
+  th {
+    border: $table-border-width solid $table-border-color !important;
+  }
+}
+
+//border-bottam
+.table > :not(caption) > * > * {
+  border-top-width: 1px;
+  border-bottom-width: 0px;
+}
+
+//dark-border
+.table-dark {
+  & > :not(:last-child) {
+    & > :last-child {
+      > * {
+        border-bottom-color: $table-dark-border-color;
+      }
+    }
+  }
+}
+
+//Table centered
+.table-centered {
+  td,
+  th {
+    vertical-align: middle !important;
+  }
+}
+
+.table-nowrap {
+  th,
+  td {
+    white-space: nowrap;
+  }
+}

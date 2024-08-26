@@ -1,0 +1,97 @@
+/* =============
+   General
+============= */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--#{$prefix}heading-color);
+}
+
+.h1,
+h1 {
+  font-size: 2.25rem;
+}
+
+.h2,
+h2 {
+  font-size: 1.8rem;
+}
+
+.h3,
+h3 {
+  font-size: 1.575rem;
+}
+
+.h4,
+h4 {
+  font-size: 1.35rem;
+}
+
+.h5,
+h5 {
+  font-size: 1.125rem;
+}
+
+.h6,
+h6 {
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+// blockquote
+
+.blockquote {
+  padding: 10px 20px;
+  border-left: 4px solid var(--#{$prefix}border-color);
+}
+
+.blockquote-reverse {
+  border-left: 0;
+  border-right: 4px solid var(--#{$prefix}border-color);;
+  text-align: right;
+}
+
+//Contaier
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1140px;
+  }
+}
+
+
+// row
+
+.row{
+  > * {
+      position: relative;
+  }
+}

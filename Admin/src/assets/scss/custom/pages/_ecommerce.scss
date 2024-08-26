@@ -1,0 +1,24 @@
+// 
+// ecommerce.scss
+//
+
+
+// checkout
+
+.checkout-tabs{
+    .nav-pills{
+        .nav-link{
+            margin-bottom: 24px;
+            text-align: center;
+            background-color: $card-bg;
+            box-shadow: $box-shadow;
+
+            &.active{
+                background-color: $primary;
+            }
+            .check-nav-icon{
+                font-size: 36px;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+// alert
+
+.alert-dismissible {
+  .btn-close {
+    font-size: 9px;
+    padding: $alert-padding-y * 1.4 $alert-padding-x;
+    box-shadow: none;
+    background: transparent escape-svg($btn-close-bg-dark) center / $btn-close-width auto no-repeat ;
+  }
+}
+
+[data-bs-theme=dark] .btn-close {
+  filter: var(--#{$prefix}btn-close);
+}
